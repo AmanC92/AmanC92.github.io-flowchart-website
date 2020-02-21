@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Flowcharts</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script src="codemirror/lib/codemirror.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='codemirror/lib/codemirror.css'>
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" type='text/css' media='screen' href="codemirror/theme/material-palenight.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="codemirror/theme/material-darker.css">
+
+
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/main.css'>
+</head>
+
+<body>
+    <div class="container"">
+        <div class="imgContainer">
+            <img src="images/process.png">
+        </div>
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper" style="border-bottom: 1px solid white;">
+                    <a href="flowcharts.html" style="color:white;">Flowcharts</a>
+                </div>
+            </div>
+            <div>
+                <div class="brand">
+                    <div class="right-side">AMAN CHHINA</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="flowcharts">
+            <button class="problemButton" id="prob1" onclick="p01Func()">Sum Two Num</button>
+            <button class="problemButton" id="prob2" onclick="p02Func()">Triangle Sides</button>
+            <button class="problemButton" id="prob3" onclick="p03Func()">Quad Roots</button>
+            <button class="problemButton" id="prob4" onclick="p04Func()">Num of Roots</button>
+            <button class="problemButton" id="prob5" onclick="p05Func()">Letter Grade</button>
+            <button class="problemButton" id="prob6" onclick="p06Func()">Pos or Neg</button>
+            <button class="problemButton" id="prob7" onclick="p07Func()">Count Pos/Neg</button>
+            <button class="problemButton" id="prob8" onclick="p08Func()">Div by 6</button>
+            <button class="problemButton" id="prob9" onclick="p09Func()">Problem 9</button>
+            <button class="problemButton" id="prob10" onclick="p10Func()">Problem 10</button>
+        </div>
+
+        <div id="output">
+            <p>
+                Select a problem to get started.
+            </p>
+        </div>
+
+        <div id="design" class="column1 design">
+            <div id="designTop">
+                <div class="switch">
+                    <div id="t1" class="toggle">
+                        <input id="check1" type="checkbox" onclick="checkUncheck1()" />
+                        <div class="inner_circle">
+                        </div>
+                    </div>
+                </div>
+                <div id="design_text" class="design_text">
+                    Flowchart
+                </div>
+            </div>
+            <img id="design_img" src="" alt="" onclick="zoomOut01()" ondblclick="zoomIn01()" />
+            <div class="design_text2" id="design_text2">
+                Select a problem to get started.
+            </div>
+        </div>
+
+        <div id="js" class="column2 jsSolution">
+            <div id="jsTop">
+                <div class="switch">
+                    <div id="t2" class="toggle">
+                        <input id="check2" type="checkbox" onclick="checkUncheck2()" />
+                        <div class="inner_circle">
+                        </div>
+                    </div>
+                </div>
+                <div id="js_text" class="js_text">
+                    JavaScript
+                    <div id="run_code">
+                        <button id="run_button" onclick="codeRun()">RUN »</button>
+                    </div>
+                </div>
+            </div>
+            <div class="code">
+                <div id="chalfunction"></div>
+                <textarea id="editor">
+// Select a problem to get started
+                </textarea>
+            </div>
+            <img id="js_img" src="" alt="" onclick="zoomOut02()" ondblclick="zoomIn02()" />
+        </div>
+
+        <div id="another" class="column3 otherSolution">
+            <div id="anotherTop">
+                <div class="switch">
+                    <div id="t3" class="toggle">
+                        <input id="check3" type="checkbox" onclick="checkUncheck3()" />
+                        <div class="inner_circle">
+                        </div>
+                    </div>
+                </div>
+                <div id="another_text" class="another_text">
+                    Another Solution
+                </div>
+            </div>
+            <img id="another_img" src="" alt="" onclick="zoomOut03()" ondblclick="zoomIn03()" />
+            <div class="another_text2" id="another_text2">
+                Select a problem to get started.
+            </div>
+        </div>
+
+    </div>
+</body >
+<script src='JS/main.js'></script>
+
+</html>
