@@ -34,8 +34,13 @@
                 <div class="nav-link-wrapper" style="border-bottom: 1px solid white;">
                     <a href="flowcharts" style="color:white;">Flowcharts</a>
                 </div>
+                <select id="problem-set" onchange="changeProblemSet(this.value)">
+                    <option value="p1">Problem Set 1</option>
+                    <option value="p2">Problem Set 2</option>
+                </select>
             </div>
             <div>
+                
                 <div class="brand">
                     <div class="right-side">AMAN CHHINA</div>
                 </div>
@@ -51,10 +56,21 @@
             <button class="problemButton" id="prob6" onclick="p06Func()">Pos or Neg</button>
             <button class="problemButton" id="prob7" onclick="p07Func()">Count Pos/Neg</button>
             <button class="problemButton" id="prob8" onclick="p08Func()">Div by 6</button>
-            <button class="problemButton" id="prob9" onclick="p09Func()">Problem 9</button>
-            <button class="problemButton" id="prob10" onclick="p10Func()">Problem 10</button>
+            <button class="problemButton" id="prob9" onclick="p09Func()">Separate Digits</button>
+            <button class="problemButton" id="prob10" onclick="p10Func()">Digits are 7</button>
         </div>
-
+        <div id="flowcharts-2" style="display: none;">
+            <button class="problemButton" id="prob11" onclick="p11Func()">Sum Digits</button>
+            <button class="problemButton" id="prob12" onclick="p12Func()">Equal Reverse</button>
+            <button class="problemButton" id="prob13" onclick="p13Func()">Factorial</button>
+            <button class="problemButton" id="prob14" onclick="p14Func()">Fibonacci Seq.</button>
+            <button class="problemButton" id="prob15" onclick="p15Func()">xx Triangle</button>
+            <button class="problemButton" id="prob16" onclick="p16Func()">Sum 8 Equal</button>
+            <button class="problemButton" id="prob17" onclick="p17Func()">Sum 100 Num</button>
+            <button class="problemButton" id="prob18" onclick="p18Func()">Product</button>
+            <button class="problemButton" id="prob19" onclick="p19Func()">Prime <= 100</button>
+            <button class="problemButton" id="prob20" onclick="p20Func()">Palindrome 100</button>
+        </div>
         <div id="output">
             <p>
                 Select a problem to get started.
