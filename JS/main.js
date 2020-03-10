@@ -74,8 +74,8 @@ sumNums();\n\n\
 
 function p02Func() {
     document.getElementById("output").innerHTML = "<p>Draw a flowchart for a computer program to\
-    receive three numbers and store them in memory spaces called a, b, and c as three sides of a\
-    triangle and, by using Heron’s formula, calculate and output the area of the triangle.</p>";
+    receive three numbers as three sides of a\
+    triangle, and by using Heron’s formula, calculate and output the area of the triangle.</p>";
 
     jsCode = '\
 function triangleSides() {\n\
@@ -123,9 +123,8 @@ triangleSides();\n\
 
 function p03Func() {
     document.getElementById("output").innerHTML = "<p>Draw a flowchart for a computer program to\
-    receive three numerical coefficients of a quadratic equation (store them in memory spaces called\
-    a, b, and c) and calculate and output its roots. Write a precondition that assumes coefficients\
-    are good enough such that a solution in real number exists.</p>";
+    receive three numerical coefficients of a quadratic equation\
+    and calculate and output its roots.</p>";
 
     jsCode = '\
 function quadRoots() {\n\
@@ -290,9 +289,8 @@ yorkGrade();\n\
 }
 
 function p06Func() {
-    document.getElementById("output").innerHTML = "<p>Assume there is a webpage containing an HTML\
-    input of type text and a button. When the button is clicked a function, named Problem06, is\
-    called. Draw a flowchart that outputs whether the input is positive or negative until a zero\
+    document.getElementById("output").innerHTML = "<p> Draw a flowchart that outputs whether\
+    the input is positive or negative until a zero\
     is received. When a zero is received, the button is disabled</p>";
 
     jsCode = '\
@@ -345,9 +343,8 @@ checkNum();\n\
 
 function p07Func() {
     document.getElementById("output").innerHTML = "<p>Draw a flowchart to receive numbers\
-    and output if they are positive or negative until a zero is entered. When a zero is entered, the\
-    program should output how many positive and how many negative numbers have been entered, then it\
-    stops</p>";
+    and output if they are positive/negative until a zero is entered. When a zero is entered, the\
+    program outputs how many positive & negative numbers were entered.</p>";
 
     jsCode = '\
 function checkNumCount() {\n\
@@ -402,11 +399,8 @@ checkNumCount();\n\
 
 function p08Func() {
     document.getElementById("output").innerHTML = "<p>Draw a flowchart to continue receiving numbers\
-    and output if they are divisible by 6 or not until a zero is entered. When a zero is entered,\
-    the program should output how many of the entered numbers were divisible by 6, then it stops.\
-    IMPORTANT RESTRICTION: you are not allowed to divide the number by 6; therefore, you are not\
-    allowed to use the modulus operator (%) over 6 to verify the remainder whether the number is\
-    divided by 6.</p>";
+    and output if they're divisible by 6 (cannot use mod 6) until a zero is entered.\
+    Then the program outputs how many numbers were divisible by 6.</p>";
 
     jsCode = '\
 function checkSix() {\n\
