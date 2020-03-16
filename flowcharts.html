@@ -8,11 +8,17 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
     <script src="codemirror/lib/codemirror.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='codemirror/lib/codemirror.css'>
+
     <script src="codemirror/mode/javascript/javascript.js"></script>
+    <script src="codemirror/mode/clike/clike.js"></script>
+    <script src="codemirror/addon/edit/matchbrackets.js"></script>
+
     <link rel="stylesheet" type='text/css' media='screen' href="codemirror/theme/material-palenight.css">
     <link rel="stylesheet" type='text/css' media='screen' href="codemirror/theme/material-darker.css">
+
     <link rel="icon" type="image/x-icon" href="/images/computer.png">
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/main.css'>
 
@@ -36,8 +42,10 @@
                 </div>
                 <div class="select-div">
                     <select id="problem-set" onchange="changeProblemSet(this.value)">
-                        <option value="p1">Problem Set 1</option>
-                        <option value="p2">Problem Set 2</option>
+                        <option value="p1">Problem Set 1 - General</option>
+                        <option value="p2">Problem Set 2 - General</option>
+                        <option value="p3">Problem Set 3 - Nested Loops</option>
+                        <option value="p4">Problem Set 4 - Arrays</option>
                     </select>
                 </div>
             </div>
@@ -74,6 +82,30 @@
             <button class="problemButton" id="prob18" onclick="p18Func()">Product</button>
             <button class="problemButton" id="prob19" onclick="p19Func()">Prime <= 100</button>
             <button class="problemButton" id="prob20" onclick="p20Func()">Palindrome 100</button>
+        </div>
+        <div id="flowcharts-3" style="display: none;">
+            <button class="problemButton" id="prob21" onclick="p21Func()">Prime to Num</button>
+            <button class="problemButton" id="prob22" onclick="p22Func()">Fac to Num</button>
+            <button class="problemButton" id="prob23" onclick="p23Func()">Left Most Num</button>
+            <button class="problemButton" id="prob24" onclick="p24Func()">No 1 to Num</button>
+            <button class="problemButton" id="prob25" onclick="p25Func()">Left Digit 8 Num</button>
+            <button class="problemButton" id="prob26" onclick="p26Func()">Left Digit 4 Num</button>
+            <button class="problemButton" id="prob27" onclick="p27Func()">No 6 Num</button>
+            <button class="problemButton" id="prob28" onclick="p28Func()">Fac to 20</button>
+            <button class="problemButton" id="prob29" onclick="p29Func()">Prime to 40</button>
+            <button class="problemButton" id="prob30" onclick="p30Func()">No 3 Num</button>
+        </div>
+        <div id="flowcharts-4" style="display: none;">
+            <button class="problemButton" id="prob31" onclick="p31Func()">[ ] User Num</button>
+            <button class="problemButton" id="prob32" onclick="p32Func()">Output [ ]</button>
+            <button class="problemButton" id="prob33" onclick="p33Func()">[ ] 1 to 20</button>
+            <button class="problemButton" id="prob34" onclick="p34Func()">[ ] Odd 100</button>
+            <button class="problemButton" id="prob35" onclick="p35Func()">[ ] Even 100</button>
+            <button class="problemButton" id="prob36" onclick="p36Func()">[ ] Right Digit</button>
+            <button class="problemButton" id="prob37" onclick="p37Func()">[ ] Right Odd</button>
+            <button class="problemButton" id="prob38" onclick="p38Func()">[ ] Right Even</button>
+            <button class="problemButton" id="prob39" onclick="p39Func()">[ ] Div 10</button>
+            <button class="problemButton" id="prob40" onclick="p40Func()">[ ] Div 40</button>
         </div>
         <div id="output">
             <p>
@@ -122,7 +154,6 @@
 // Select a problem to get started
                 </textarea>
             </div>
-            <img id="js_img" src="" alt="" onclick="zoomOut02()" ondblclick="zoomIn02()" />
         </div>
 
         <div id="another" class="column3 otherSolution">
@@ -135,12 +166,15 @@
                     </div>
                 </div>
                 <div id="another_text" class="another_text">
-                    Another Solution
+                    Java
                 </div>
             </div>
-            <img id="another_img" src="" alt="" onclick="zoomOut03()" ondblclick="zoomIn03()" />
+            <div class="code">
+                <textarea id="editorJava">
+// Select a problem to get started
+                </textarea>
+            </div>
             <div class="another_text2" id="another_text2">
-                Select a problem to get started.
             </div>
         </div>
 
